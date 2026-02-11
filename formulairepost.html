@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulaire Post</title>
+</head>
+<body>
+	<h1>PARTICIPER A NOTRE CONCOURS </h1>
+	<h2>Vous serez peut-être l'heureux gagnant(e) </h2>
+	
+	<form action="recup_post.php" method="POST">
+	<div>
+		<label for="nom-id">Nom</label>
+		<input type="text" name="nom" id="nom-id">
+	</div>
+
+	<div>
+		<label for="prenom-id">Prenom</label>
+		<input type="text" name="prenom" id="prenom-id">
+	</div>
+
+	<div>
+		<label for="pwd-id">Mot de passe</label>
+		<input type="password" name="pwd" id="pwd-id">
+	</div>
+
+
+	<div>
+		<input type="submit" name="action" value="Envoyer">
+	</div>
+
+   </form>
+
+	
+</body>
+</html>

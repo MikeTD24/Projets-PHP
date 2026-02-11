@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+  background: url(../images/img41.jpg);
+  background-size: cover;
+  padding: 50px;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  text-align: center;
+  height: 180px;
+}
+h1{
+    color: white;
+
+}
+
+/* Logos à gauche */
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 95%;
+  margin: 25px auto;
+}
+.logo img{
+    height: 30px;
+}
+
+/* cacher la liste au départ */
+.menu-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* masquer la checkbox*/
+.menu-toggle {
+    display: none;
+}
+
+/* afficher la liste quand la checkbox est cochée */
+.menu-toggle:checked + .hamburger + .menu-list {
+    display: block;
+}
+
+/* hamburger */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+/* style des liens */
+.menu-list li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Layout */
+.fw-footer{background:#0f1724;color:#e6eef8;padding:28px 16px;font-family:system-ui,Arial,Helvetica;box-sizing:border-box;}
+.fw-footer-inner{max-width:1100px;margin:0 auto;display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start;}
+.fw-logos{flex:1 1 320px;min-width:220px;display:flex;flex-direction:column;gap:8px;}
+.logo-link{display:inline-block;text-decoration:none;}
+.fw-social{flex:1 1 260px;min-width:220px;}
+.fw-social h4,.fw-links h4{margin:0 0 8px 0;color:#fff;font-size:15px;}
+.fw-social-list{display:flex;gap:10px;flex-wrap:wrap;}
+.social-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:6px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:#cbd5e1;text-decoration:none;font-size:14px;}
+.social-btn svg{display:block;}
+.social-btn:hover{border-color:rgba(255,255,255,0.12);color:#fff;}
+
+/* Links columns */
+.fw-links{flex:1 1 360px;min-width:260px;display:flex;gap:24px;flex-wrap:wrap;}
+.links-col ul{list-style:none;padding:0;margin:0;}
+.links-col li{margin:6px 0;}
+.links-col a{color:#e6eef8;text-decoration:none;font-size:14px;}
+.links-col a:hover{text-decoration:underline;}
+
+/* Bottom */
+.fw-footer-bottom{border-top:1px solid rgba(255,255,255,0.04);margin-top:20px;padding-top:12px;text-align:center;color:#94a3b8;font-size:13px;}
+
+/* Responsive */
+@media (max-width:760px){
+  .fw-footer-inner{gap:16px;}
+  .fw-logos,.fw-social,.fw-links{flex:1 1 100%;min-width:0;}
+  .fw-links{flex-direction:row;gap:12px;}
+}
+
+
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulaire Get</title>
+	<style>
+		/* Style global */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Conteneur du formulaire */
+form {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 350px;
+}
+
+/* Titres */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #555;
+}
+
+/* Labels et champs */
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #74ebd5;
+    outline: none;
+}
+
+/* Bouton */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #34495e;
+    transform: scale(1.05);
+}
+
+	</style>
+</head>
+<body>
+	<h1>PARTICIPER A NOTRE CONCOURS </h1>
+	<h2>Vous serez peut-être l'heureux gagnant(e) </h2>
+	
+	<form action="recup_get.php" method="GET">
+	<div>
+		<label for="nom-id">Nom</label>
+		<input type="text" name="nom" id="nom-id">
+	</div>
+
+	<div>
+		<label for="prenom-id">Prenom</label>
+		<input type="text" name="prenom" id="prenom-id">
+	</div>
+
+	<div>
+		<label for="age-id">Age</label>
+		<input type="number" name="age" id="age-id" min="0" max="100">
+	</div>
+
+
+	<div>
+		<input type="submit" name="action" value="Envoyer">
+	</div>
+
+   </form>
+
+	
+</body>
+</html>
